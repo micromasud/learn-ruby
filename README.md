@@ -159,24 +159,161 @@ unless number > 10 \
   puts "number is less than 10." \
 end
 
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
+**Ruby Assignment Operators**
 
-****
-****
-****
-****
-****
-****
-****
+Assignment operators in Ruby are used to assign or update values to variables. The most common assignment operator is = but others also exist, like +=, -=, *= and /=.
+
+**Ruby each Method**
+
+To iterate over an array in Ruby, use the .each method. It is preferred over a for loop as it is guaranteed to iterate through each element of an array.
+
+**Ruby “next” Keyword**
+
+for i in 1..10 \
+  next if i % 2 == 0 \
+  puts i \
+end
+
+#In this example, the next keyword along with a shorthand if statement is used to skip over the even numbers in the sequence.
+  
+\# Output: \
+\# 1 \
+\# 3 \
+\# 5 \
+\# 7 \
+\# 9
+
+**Ruby while Loop**
+
+**Ruby times Method**
+
+
+5.times { puts ""Codecademy"" }
+
+\# Output:  \
+\# Codecademy \
+\# Codecademy \
+\# Codecademy \
+\# Codecademy \
+\# Codecademy
+
+**Ruby Range**
+
+**Ruby loop**
+
+**Ruby until Loop**
+
+**Ruby for Loop**
+
+**Ruby Hash**
+
+profile = { \
+  "name" => "Magnus", \
+  "profession" => "chess player", \
+  "ranking" => 1, \
+  "grandmaster?" => true \
+}
+
+/# "name", "profession", "ranking", and "grandmaster?" are the keys. "Magnus", "chess player", 1 and true are the values.
+
+puts profile["name"] \# => Magnus
+
+**Ruby Array**
+
+numbers = [1, 2, 3, 4, 5] \
+\#An array of Integers
+
+words = ["See", "Spot", "run"] \
+\#An array of Strings
+
+mixed = ["hello", 5, true, 3.0] \
+\#An array with a String, Integer, Boolean, and Float
+
+empty = [] \
+\#An empty array
+
+**Ruby Hash New**
+
+\#Creating a hash through literal notation: \
+lunch = { \
+  "protein" => "chicken", \
+  "greens" => "lettuce", \
+  "organic?" => true \
+}
+
+\#Creating a hash through Hash.new \
+lunch = Hash.new \
+puts lunch # => {}
+
+**Ruby Hash Bracket Notation Adding Pairs**
+
+\#Bracket notation applies to any hash, regardless of how it was initialized \
+teammates = Hash.new \
+teammates["forward"] = "Messi" 
+
+salary = { \
+  "starting" => 40000 \
+} \
+salary["mid-level"] = 60000
+
+**Ruby Multidimensional Arrays**
+
+multi_array = [[0,1,2,3],[4.5, true, "hi"]]
+
+\# Accessing the array at index 1 \
+puts multi_array[1] \# => [4.5, true, "hi"]
+
+\# Accessing the element at index 0 within the array at index 1 \
+puts multi_array[1][0] \# => 4.5
+
+**Ruby Array Index**
+
+example = ["Car", "Boar", 45, 9.9, true]
+
+\#For an array named `example`, you can retrieve an item of a particular index by referencing its index.
+
+puts example[2] \# => 45 \
+puts example[0] \# => Car
+
+**Ruby Method .Each**
+
+\#In this example, the each method iterates over every color in the colors array and prints it to the console.
+
+colors = ["red", "blue", "green", "yellow"]
+
+colors.each { |color| puts color } \
+\#Output \
+\#red \
+\#blue \
+\#green \
+\#yellow
+
+\#When iterating over hashes, two placeholder variables are needed to represent each key/value pair.
+
+polygons = { \
+  "pentagon" => 5, \
+  "hexagon" => 6, \
+  "nonagon" => 9 \
+}
+
+polygons.each do |shape, sides| \
+  puts "A \#{shape} has \#{sides} sides." \
+end
+
+\#Output \
+\#A pentagon has 5 sides. \
+\#A hexagon has 6 sides. \
+\#A nonagon has 9 sides.
+
+**Ruby Hash Bracket Notation Value**
+
+my_love = { \
+  "dog" => "Keanu", \
+  "breed" => "Shiba Inu", \
+  "age_in_years" => 1, \
+}
+
+puts my_love["breed"] \# => Shiba Inu
 ****
 ****
 ****
