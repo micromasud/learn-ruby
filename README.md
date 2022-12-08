@@ -1,5 +1,7 @@
 # learn-ruby
 
+# Introduction to Ruby
+
 **Ruby Variables**
 
 myVar = 48
@@ -87,6 +89,8 @@ age = 30
 print "Hi, my name is Cody, and I am #{age} years old" \
 \# "Hi, my name is Cody, and I am 30 years old"
 
+# Control Flow in Ruby
+
 **elsif Statements in Ruby**
 
 print "enter a number: " \
@@ -159,6 +163,8 @@ unless number > 10 \
   puts "number is less than 10." \
 end
 
+# Looping with Ruby
+
 **Ruby Assignment Operators**
 
 Assignment operators in Ruby are used to assign or update values to variables. The most common assignment operator is = but others also exist, like +=, -=, *= and /=.
@@ -204,6 +210,8 @@ end
 **Ruby until Loop**
 
 **Ruby for Loop**
+
+# Arrays and Hashes
 
 **Ruby Hash**
 
